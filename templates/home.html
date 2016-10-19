@@ -1,0 +1,58 @@
+<html>
+  <head>
+  <title>Simple Flask Word-Of-The-Day App</title>
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+
+  <!-- Milligram CSS minified -->
+  <link rel="stylesheet" href="../static/milligram/dist/milligram.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <style>
+      body {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      #header {
+        padding-top: 5;
+      }
+      #inner-header {
+        padding-left: 10;
+      }
+      #main {
+        padding-left: 10;
+      }
+    </style>
+
+  </head>
+  
+  <body>
+  <div id="header">
+    <div id="inner-header">
+      <h1>Simple Flask Word-Of-The-Day App</h1>
+    </div>
+    <hr />
+  </div>
+  
+  <div id="main">
+
+  <h2>Word of the Day</h2>
+    <h3><i>{{word}}</i><br/></h3>
+    <p><i>A note on the word:</i> {{note}}</p>
+    <p><i>Part of Speech:</i> {{partofspeech}}</p>
+    <p><i>Definition:</i> {{definition}}</p>
+    <p><i>Example 1</i>
+    <p>{{example1}}<br/></p></hr>
+    <p><i>Example 2</i>
+    <p>{{example2}}</i><br/></p></hr>
+    <hr/>
+
+    </div> 
+  </body>
+</html>

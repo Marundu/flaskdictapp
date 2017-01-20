@@ -1,11 +1,11 @@
 from flask import Flask, render_template, request
+from api_key import WORDNIK_API_KEY
 import json
 import requests
 
 app=Flask(__name__)
 
 WOTD_URL='http://api.wordnik.com/v4/words.json/wordOfTheDay?api_key='
-WORDNIK_API_KEY='f52ae2f465c50ecea60070c88c50517908419e15c939178ae'
 
 @app.route('/')
 def home():

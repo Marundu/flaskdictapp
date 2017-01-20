@@ -1,15 +1,15 @@
 from flask import Flask, render_template, request
-from api_key import WORDNIK_API_KEY
+from api_key import api_key
 import json
 import requests
 
 app=Flask(__name__)
 
-WOTD_URL='http://api.wordnik.com/v4/words.json/wordOfTheDay?api_key='
+url='http://api.wordnik.com/v4/words.json/wordOfTheDay?api_key='
 
 @app.route('/')
 def home():
-	wotd=requests.get(WOTD_URL+WORDNIK_API_KEY)
+	wotd=requests.get(url+api_key)
 	parsed=wotd.json()
 	word=parsed['word']
 	note=parsed['note']

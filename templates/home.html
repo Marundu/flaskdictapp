@@ -1,31 +1,20 @@
 <html>
-  <head>
+<head>
+
+  <title>Simple Flask Word-Of-The-Day App</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Simple Flask Word-Of-The-Day App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
   <link rel="stylesheet" href="../static/css/milligram/dist/milligram.min.css">
-  <!-- Layout Improvements -->
-  <style>
-  body {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  #header {
-    padding-top: 5;
-  }
-  #inner-header {
-    padding-left: 10;
-  }
-  #main {
-    padding-left: 10;
-  }
-  </style>
-  </head>
   
-  <body>
+  <!-- Layout Improvements -->
+  <link rel="stylesheet" href="../static/css/override.css">
+  
+</head>
+
+<body>
   <div id="header">
     <div id="inner-header">
       <h1>Simple Flask Word-Of-The-Day App</h1>
@@ -35,7 +24,7 @@
   
   <div id="main">
 
-  <h2>Word of the Day</h2>
+    <h2>Word of the Day</h2>
     <h3><i>{{word}}</i><br/></h3>
     <p><i>A note on the word:</i> {{note}}</p>
     <p><i>Part of Speech:</i> {{partofspeech}}</p>
@@ -46,6 +35,6 @@
     <p>{{example2}}</i><br/></p></hr>
     <hr/>
 
-    </div> 
+  </div> 
   </body>
 </html>

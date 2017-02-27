@@ -1,7 +1,11 @@
-from flask import Flask, render_template, request
-from api_key import api_key
+from flask import Flask
+from flask import render_template
+from flask import request
+
 import json
 import requests
+
+from api_key import api_key
 
 app=Flask(__name__)
 

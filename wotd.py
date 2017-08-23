@@ -9,11 +9,11 @@ from api_key import api_key
 
 app=Flask(__name__)
 
-url='http://api.wordnik.com/v4/words.json/wordOfTheDay?api_key='
+url='http://api.wordnik.com/v4/words.json/wordOfTheDay?api_key={}'.format(api_key)
 
 @app.route('/')
 def home():
-	wotd=requests.get(url+api_key)
+	wotd=requests.get(url)
 	parsed=wotd.json()
 	word=parsed['word']
 	note=parsed['note']

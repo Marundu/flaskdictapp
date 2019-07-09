@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<body> 
+
+  <h3>Word of the Day - {{ publish_date }} </h3>
+  <h4>The word for today is <i>{{ word }}</i><br/></h4>
+  <p><i>A note on the word:</i> {{ note }}</p>
+  <p><i>Definitions:</i> {{ definition }}</p>
+  <p><i>Examples</i>
+  <p>{{ example }}<br/></p></hr>
+  <hr/>
+
+</body>
+
+{% endblock %}

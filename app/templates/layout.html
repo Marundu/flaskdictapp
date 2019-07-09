@@ -1,15 +1,17 @@
 <html>
 <head>
+
   <title>Simple Flask Word-Of-The-Day App</title>
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" href="../static/css/milligram/milligram.css">
-  <link rel="stylesheet" href="../static/css/override.css">
-  
-  <!-- Google Fonts -->
+
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+  <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/layoutimprovements.css') }}">
+
 </head>
 
 <body>
@@ -22,17 +24,10 @@
   
   <div id="main">
 
-    <h3>Word of the Day</h3>
-    <h4><i>{{word}}</i><br/></h4>
-    <p><i>A note on the word:</i> {{note}}</p>
-    <p><i>Part of Speech:</i> {{partofspeech}}</p>
-    <p><i>Definition:</i> {{definition}}</p>
-    <p><i>Example 1</i>
-    <p>{{example1}}<br/></p></hr>
-    <p><i>Example 2</i>
-    <p>{{example2}}</i><br/></p></hr>
-    <hr/>
-
+    {% block content %}
+    
+    {% endblock %}
+    
   </div> 
   </body>
 </html>

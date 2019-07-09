@@ -1,0 +1,13 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: .01em;
+  line-height: 1.6;
+}
